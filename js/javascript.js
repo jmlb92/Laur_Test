@@ -1,6 +1,3 @@
-$('#bt_process').disabled(true);
-
-
 $('#bt_render').on('click', function(){
 	if (!$("#raw_html").val()) {
 		alert("Ingrese HTML");
@@ -60,37 +57,3 @@ $('#bt_print').on('click', function(){
 	  
 
 });
-
-$('#bt_print2').on('click', function(){
-
-	// html2canvas($('#test'), {
- //            onrendered: function(canvas) {
- //                theCanvas = canvas;
- //                document.body.appendChild(canvas);
-
- //                // Convert and download as image 
- //                //Canvas2Image.saveAsPNG(canvas); 
- //                $('#img').append(canvas);
- //                window.open('#img')
- //                // Clean up 
- //                document.body.removeChild(canvas);
- //            }
- //        });
-
- html2canvas(document.getElementById("test"), {
- 			useCORS: true,
- 			onrendered: function(canvas){
- 				var imga = canvas.toDataURL("image/png");
- 				
- 			}
- 		});
-
-	 // $(document).ready(function(){
-	 // 	$('imga').printThis();
-	 // });
-
-});
-
-
-
-
