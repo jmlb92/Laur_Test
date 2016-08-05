@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Laureate Test</title>
+		<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+	</head>
+
+	<nav>
+	    <div class="nav-wrapper light-green">
+	      <a href="./index.html" class="brand-logo center">HTML Template Parser</a>
+	    </div>
+	  </nav>
+	<body>
+
+	<div class="container" >
+		<h1></h1>
+		<textarea placeholder="Escriba su HTML aqui" rows="4" cols="50" id="raw_html" style="height: 175px;"></textarea>
+		<a class="waves-effect waves-light light-green btn" id="bt_render">Visualizar HTML</a>
+		<a class="waves-effect waves-light light-green btn" id="bt_process">Buscar Campos a Reemplazar</a>
+
+	</div>
+	
+	<div class="container campos">
+		<table class="bordered" id='tbl'>
+		<thead>
+		  <tr>
+			  <th data-field="id">Campos</th>
+			  <th data-field="name">Valor Deseado</th>
+		  </tr>
+		</thead>
+
+		<tbody id='tabla'>
+
+		</tbody>
+		</table>
+		<h1></h1>
+
+		<a class="waves-effect waves-light light-green btn" id="bt_replace">Reemplazar Valores</a>
+		<a class="waves-effect waves-light light-green btn" id="bt_print">Imprimir PDF</a>
+	</div>
+
+
+
+	<div class="container render_html" id="render_html">
+
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/javascript.js"></script>
+	<script type="text/javascript" src="js/replace.js"></script>
+	<script type="text/javascript" src="js/printThis.js"></script>
+
+
+</body>
+</html>
